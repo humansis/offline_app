@@ -18,7 +18,7 @@ stages:
     - export PATH=$PATH:$ANDROID_SDK/platform-tools
     - envsubst < gradle.properties.template > gradle.properties
     - envsubst < ./app/google-services-template.json > ./app/google-services.json
-    - mkdir ./app/keystore
+    - mkdir /builds/humansis/mobile-apps/user-app/app/keystore
     - cp $RELEASE_KEYSTORE /builds/humansis/mobile-apps/user-app/app/keystore/release.keystore
     - cp $DEBUG_KEYSTORE /builds/humansis/mobile-apps/user-app/app/keystore/debug.keystore
 
